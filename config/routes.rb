@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get 'pages/home'
-  get 'pages/about'
-  get 'pages/contact'
+  get '', to: 'pages#home'
+  get 'home', to: 'pages#home'
+  get 'about', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
   resources :microposts
   resources :users
   root 'pages#home'

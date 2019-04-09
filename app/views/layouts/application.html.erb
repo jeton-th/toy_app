@@ -10,20 +10,31 @@
   </head>
 
   <body>
-    <nav>
+    <nav class="main-nav">
       <div class="container">
         <div class="logo">
           <a href="">Microblog</a>
         </div>
 
         <div class="nav-links">
-          <a href="http://"></a>
+          <%= link_to 'Home', root_path() %>
+          <%= link_to 'About', about_path() %>
+          <%= link_to 'Contact', contact_path() %>
+          <%= link_to 'Users', users_path() %>
+          <%= link_to 'Posts', microposts_path() %>
         </div>
       </div>
     </nav>
 
-    <%= yield %>
+    <div class="content">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
 
-    <footer>&copy; Jeton</footer>
+    <footer class="container">
+      <hr>
+      <small>Microblog<small>
+    </footer>
   </body>
 </html>
