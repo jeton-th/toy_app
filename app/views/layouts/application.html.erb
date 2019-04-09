@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <a href="">Microblog</a>
+        </div>
+
+        <div class="nav-links">
+          <a href="http://"></a>
+        </div>
+      </div>
+    </nav>
+
+    <%= yield %>
+
+    <footer>&copy; Jeton</footer>
+  </body>
+</html>
